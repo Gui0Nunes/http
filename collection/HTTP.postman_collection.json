@@ -1,0 +1,225 @@
+{
+	"info": {
+		"_postman_id": "0d7f28f2-5290-4fa8-b075-915d93fa9a51",
+		"name": "HTTP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13873563"
+	},
+	"item": [
+		{
+			"name": "getSimples",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/dev/http/getSimples.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"dev",
+						"http",
+						"getSimples.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getNome",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/dev/http/getNome.php?nome=Guilherme",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"dev",
+						"http",
+						"getNome.php"
+					],
+					"query": [
+						{
+							"key": "nome",
+							"value": "Guilherme"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postSimples",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nome",
+							"value": "Matheus",
+							"type": "text"
+						},
+						{
+							"key": "requisicao",
+							"value": "post",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/dev/http/postSimples.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"dev",
+						"http",
+						"postSimples.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postNome",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nome",
+							"value": "Gui",
+							"type": "text"
+						},
+						{
+							"key": "dep",
+							"value": "P&D",
+							"type": "text"
+						},
+						{
+							"key": "geral",
+							"value": "Login",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/dev/http/postNome.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"dev",
+						"http",
+						"postNome.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postTeste",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nome",
+							"value": "Gui",
+							"description": "Obrigatório",
+							"type": "text"
+						},
+						{
+							"key": "geral1",
+							"value": "Titulo1",
+							"description": "opcional",
+							"type": "text"
+						},
+						{
+							"key": "geral2",
+							"value": "",
+							"description": "opcional",
+							"type": "text"
+						},
+						{
+							"key": "geral3",
+							"value": "Titulo3",
+							"description": "opcional",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/dev/http/postTeste.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"dev",
+						"http",
+						"postTeste.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postJson",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Tok3n-T3st1-142536",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"telefone\":\"123\",\n    \"mensagem\":\"Teste msg\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/dev/http/postJsonMsg.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"dev",
+						"http",
+						"postJsonMsg.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
