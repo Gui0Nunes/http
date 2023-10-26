@@ -5,6 +5,16 @@ header('Content-Type: application/json');
 
 $json = file_get_contents('php://input');
 
+$headers = getallheaders();
+$token = $headers['Authorization'];
+$token = str_replace('Bearer ', '', $token);
+
+if ($token != "Tok3n-T3st1-142536"){
+    http_response_code(401);
+    print_r(json_encode("Acesso negado!"));
+    die();
+}
+
 if (!empty($json)) {
     $dados = json_decode($json);
     if (isset($dados->telefone)) {
