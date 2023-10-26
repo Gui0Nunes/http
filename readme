@@ -1,1 +1,45 @@
-Testes para requisições HTTP
+// Testes para requisições HTTP
+
+
+
+
+
+// Requisições aJax
+
+
+//código aJax - get simples
+$.get("http://localhost/dev/http/getSimples.php", function(resultado){
+    $("#mensagem").html(resultado);
+})
+
+
+//código aJax - post simples
+$.post("salvar_dados.php", {
+   nome : "Maria Fernanda", salario : "3000"
+}, function(msg){
+   $("#resultado").html(msg);
+})
+
+
+//código aJax - post
+//solicitacao aJax
+$.ajax({
+    url : "cadastrar.php",
+    type : 'post',
+    headers: { 'Authorization': 'Bearer Tok3n-T3st1-142536' },
+    data : {
+         nome : "Maria Fernanda",
+         salario :'3500'
+    },
+    beforeSend : function(){
+         $("#resultado").html("ENVIANDO...");
+    }
+})
+//retorno ok vem aqui
+.done(function(msg){
+    $("#resultado").html(msg);
+})
+//retorno da falha na solicitacao
+.fail(function(jqXHR, textStatus, msg){
+    alert(msg);
+});
