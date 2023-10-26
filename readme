@@ -1,8 +1,17 @@
 // Testes para requisições HTTP
 
+//Orientação de Leitura
+//O que é o HTTP
+//https://www.youtube.com/watch?v=hwttZtWkXTk
 
+//Artigo com os Status HTTP
+//https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status
 
+//download Anydesk Linux
+// https://anydesk.com/pt/downloads/linux?dv=deb_64
 
+// Método jQuery.ajax
+// https://www.devmedia.com.br/ajax-com-jquery-trabalhando-com-requisicoes-assincronas/37141
 
 // Requisições aJax
 
@@ -43,3 +52,42 @@ $.ajax({
 .fail(function(jqXHR, textStatus, msg){
     alert(msg);
 });
+
+
+// //html
+// <!DOCTYPE html>
+// <html lang="en">
+
+// <head>
+//     <meta charset="UTF-8">
+//     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <link rel="shortcut icon" href="../imagem/iconalerta.png" type="image/png">
+//     <title>Tela de Ação</title>
+//     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+//     <link rel="stylesheet" href="styles.css">
+// </head>
+
+// <body>
+//     <div class="container">
+//         <div class="box">
+//             <div class="content">
+//                 <h2 id="mensagem">?</h2>
+//                 <h3>Alerta Contratros</h3>
+//                 <a href="../AlertasContratos/">mais informações</a>
+//             </div>
+//         </div>
+//         <div class="box">
+//             <div class="content">
+//                 <h2 id="QtdTelemetria">?</h2>
+//                 <h3>Alerta Telemetria</h3>
+//                 <a href="../AlertasTelemetrias/">mais informações</a>
+//             </div>
+//         </div>
+//     </div>
+//     <a class="BtnSair" href="../app/controller/desconexao_controller.php">Sair</a>
+//     <a class="BtnTelaAcao" href="../TelaAcao/">Tela de Ação</a>
+//     <script src="../src/js/getAlertasContratos.js" defer></script>
+// </body>
+
+// </html>
