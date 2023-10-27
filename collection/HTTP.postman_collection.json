@@ -183,6 +183,37 @@
 			"response": []
 		},
 		{
+			"name": "postInfos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nome",
+							"value": "Gui",
+							"description": "Obrigatório",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/dev/http/postInfos.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"dev",
+						"http",
+						"postInfos.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "postJson",
 			"request": {
 				"auth": {
