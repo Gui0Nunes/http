@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=scrp, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <span id="mensagem"></span>
+    <script>
+        $.get("./endpointLista.php", function (resultado) {
+            console.log(resultado);
+
+            var valores = JSON.parse(resultado)
+            var x = 0;
+
+            var qtd = (Object.keys(valores).length);
+            console.log(qtd);
+
+            var text = '';
+
+            while (x < qtd) {
+                var nome = valores[x].nome
+                text += "<p>"+nome+"</p>";
+
+                x++
+            }
+
+            $("#mensagem").html(text);
+
+
+        })
+    </script>
+</body>
+
+</html>

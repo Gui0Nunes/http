@@ -1,32 +1,34 @@
 <?php
 
-    $JsonAlertas = '{
+
+
+    $JsonAlertas = [
+               
+       0 => [
+            "nome" => "Guilherme",
+            "setor" => "P&D",
+            "ramal" => 35
+        ],
        
-        "0": {
-            "nome": "Guilherme",
-            "setor": "P&D",
-            "ramal": 35
-       },
-       
-       "1" : {
-        "nome": "Murilo",
-        "setor": "P&D",
-        "ramal": 37
-       },
+       1 => [
+        "nome" => "Murilo",
+        "setor" => "P&D",
+        "ramal" => 37
+       ],
 
-       "2" : {
-        "nome": "Lucas",
-        "setor": "P&D",
-        "ramal": 40
-       },
+      2 => [
+        "nome" => "Lucas",
+        "setor" => "P&D",
+        "ramal" => 40
+       ],
 
-       "3" : {
-        "nome": "Matheus",
-        "setor": "P&D",
-        "ramal": 41
-       },              
+      3 => [
+        "nome" => "Matheus",
+        "setor" => "P&D",
+        "ramal" => 41
+       ]             
 
-    }';
+    ];
 
-    echo $JsonAlertas;
+    echo json_encode($JsonAlertas);
 
