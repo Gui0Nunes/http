@@ -214,6 +214,26 @@
 			"response": []
 		},
 		{
+			"name": "endpointLista",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/dev/http/endpointLista.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"dev",
+						"http",
+						"endpointLista.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "postJson",
 			"request": {
 				"auth": {
