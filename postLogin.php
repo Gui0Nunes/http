@@ -1,6 +1,6 @@
 <?php
 
-header('Content-Type: application/json');
+//header('Content-Type: application/json');
 //JSON_UNESCAPED_UNICODE
 
 if (isset($_REQUEST['login'])) {
